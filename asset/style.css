@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Metrophobic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.navbar {
+    background-color: #4B0082;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Navbar section */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 100px;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.16);
+}
+
+header.sticky {
+    padding: 20px 100px;
+    background-color: #fff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.16);
+}
+
+header .logo {
+    position: relative;
+    color: var(--textColor);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+
+.logo img {
+    width: auto;
+    height: 50px;
+    object-fit: contain;
+}
+
+.nav__list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__item {
+    position: relative;
+    list-style: none;
+}
+
+.nav__item a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4B0082;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+.nav__item a:hover {
+    color: #000;
+}
+
+.nav__link {
+    padding: 10px;
+    color: var(--teamColor);
+    font-weight: 600;
+}
+
+.header__close,
+.header__toggle {
+    display: none;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem !important;
+}
+
+/* banner section */
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('images/milin-john-77tD-r6PqY8-unsplash.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    /* margin-top: 100px; */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+.btn-accent {
+    background-color: #00BFFF;
+    color: #fff;
+    border: none;
+}
+
+.explore-btn {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 0px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.apply-btn {
+    background-color: transparent;
+    border: 1px solid #4B0082;
+    color: #4B0082;
+    padding: 8px 20px;
+    border-radius: 0px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* about-section */
+
+.about-section {
+    padding: 150px 0px;
+}
+
+/* message-section */
+
+.message-section {
+    position: relative;
+    padding: 150px 0px;
+    background-image: url('images/milin-john-77tD-r6PqY8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.message-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust opacity as needed */
+    z-index: 1;
+}
+
+.message-section h2 {
+    position: relative;
+    z-index: 1000 !important;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.message-section .card-principal {
+    position: relative;
+    z-index: 1000;
+}
+
+/* courses-section */
+
+.courses-section {
+    padding: 150px 0px;
+}
+
+.courses-section .card {
+    padding: 10px 10px;
+}
+
+.courses-section .card-title {
+    color: #4B0082;
+}
+
+.btn-accent:hover {
+    background-color: #009acd;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-heading {
+    font-weight: bold;
+    color: #4B0082;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* upcoming-section css */
+
+.upcoming-section {
+    padding: 150px 0px;
+}
+
+.upcoming-section .card {
+    padding: 20px 20px 10px 20px !important;
+}
+
+.whyChoose {
+    padding: 150px 0px;
+}
+
+.whyChoose .card-title {
+    color: #4B0082;
+}
+
+footer {
+    background-color: #4B0082;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+}
+
+@media all and (max-width:990px) {
+
+    /* navbar css */
+    body {
+        overflow-x: hidden;
+    }
+
+    body.overflow-hidden {
+        overflow: hidden;
+    }
+
+    header {
+        position: fixed;
+        justify-content: space-between;
+        padding: 15px 60px;
+    }
+
+    .logo a {
+        font-size: 16px;
+    }
+
+    .header__toggle {
+        display: inline;
+        color: #000000;
+        font-size: 20px !important;
+        background-color: var(--teamColor);
+        padding: 15px 15px;
+        border-radius: 50px;
+
+    }
+
+    header.sticky .header__toggle {
+        display: inline;
+        color: #000000;
+        font-size: 24px;
+    }
+
+    .header__close {
+        position: absolute;
+        right: 70px;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+        z-index: 1000;
+        color: #454545;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #FAFAF5;
+        color: #454545;
+        width: 40%;
+        height: 100vh;
+        padding: 40px 0px 0px 0px;
+        z-index: 1000;
+        transition: 0.5s;
+        border-radius: 0 0 0 50%;
+        z-index: 1000;
+        display: block;
+    }
+
+    header.sticky {
+        padding: 15px 60px;
+    }
+
+    header .logo {
+        position: relative;
+        color: var(--textColor);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.6s;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .show {
+        right: 0;
+    }
+
+    .nav__item a {
+        color: #454545;
+    }
+
+    .nav__item {
+        margin: 15px 0;
+    }
+
+    .nav__list a {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+    }
+
+    .nav__list a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: var(--teamColor);
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+}
+
+@media all and (max-width:768px) {
+    br {
+        display: none !important;
+    }
+
+    /* navbar css */
+    body {
+        overflow-x: hidden;
+    }
+
+    body.overflow-hidden {
+        overflow: hidden;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    header {
+        height: auto;
+        justify-content: space-between;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .logo a {
+        font-size: 0.9rem;
+    }
+
+    .header__toggle {
+        display: inline;
+        color: #000000ee;
+        font-size: 26px;
+    }
+
+    .header__close {
+        position: absolute;
+        right: 24px;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+        z-index: 1000;
+        color: #000000;
+    }
+
+    .nav__item a {
+        color: #000000;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #FAFAF5;
+        color: #eeee;
+        width: 100%;
+        height: 100vh;
+        padding: 24px 0;
+        z-index: 1000;
+        transition: 0.5s;
+        border-radius: 0 0 0 0%;
+        z-index: 1000;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        margin-right: 15%;
+    }
+
+    .show {
+        right: 0;
+    }
+
+    .nav__item {
+        margin: 1.5rem 0;
+    }
+
+    header.sticky {
+        padding: 10px 20px 10px 20px;
+    }
+
+    /* banner section */
+
+    .hero h1 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .explore-btn {
+        padding: 8px 15px;
+    }
+
+    .apply-btn {
+        background-color: transparent;
+        border: 1px solid #4B0082;
+        color: #4B0082;
+        padding: 8px 20px;
+        border-radius: 0px;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    /* about-section */
+
+    .about-section {
+        padding: 50px 10px;
+    }
+
+    /* message-section */
+
+    .message-section {
+        padding: 50px 10px;
+    }
+
+    /* courses-section */
+
+    .courses-section {
+        padding: 50px 10px;
+    }
+
+    /* upcoming-section css */
+
+    .upcoming-section {
+        padding: 50px 10px;
+    }
+
+    .upcoming-section .card {
+        padding: 20px 20px 10px 20px !important;
+    }
+
+    .whyChoose {
+        padding: 50px 10px;
+    }
+}
