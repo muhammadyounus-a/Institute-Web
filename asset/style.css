@@ -381,7 +381,7 @@ footer {
 
     /* navbar css */
     body {
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
 
     body.overflow-hidden {
