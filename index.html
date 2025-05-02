@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- font awersome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- aos link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- style link -->
     <link rel="stylesheet" href="asset/style.css">
 </head>
@@ -35,7 +37,7 @@
     </header>
 
     <!-- Hero Banner -->
-    <section class="hero" id="home">
+    <section class="hero" id="home"  data-aos="fade-down">
         <div>
             <h1>Welcome to Our Institution</h1>
             <p>Empowering Students Since 1980</p>
@@ -44,7 +46,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="container about-section" id="about">
+    <section class="container about-section" id="about" data-aos="fade-up">
         <h2 class="section-heading">About Our Institution</h2>
         <p class="text-center">We are a leading educational institution offering a wide range of academic programs and
             extracurricular activities designed to foster holistic development and prepare students for future success.
@@ -52,7 +54,7 @@
     </section>
 
     <!-- Principal Message -->
-    <section class="bg-white message-section">
+    <section class="bg-white message-section" data-aos="fade-up">
         <div class="container">
             <h2>Message from the Principal</h2>
             <div class="row justify-content-center">
@@ -68,10 +70,10 @@
     </section>
 
     <!-- Courses Section -->
-    <section class="container courses-section" id="courses">
+    <section class="container courses-section" id="courses" data-aos="fade-up">
         <h2 class="section-heading">Our Courses</h2>
         <div class="row g-4">
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up">
                 <div class="card border-0 shadow">
                     <div class="card-body">
                         <h5 class="card-title">Computer Science</h5>
@@ -80,7 +82,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up">
                 <div class="card border-0 shadow">
                     <div class="card-body">
                         <h5 class="card-title">Business Management</h5>
@@ -89,7 +91,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up">
                 <div class="card border-0 shadow">
                     <div class="card-body">
                         <h5 class="card-title">Fine Arts</h5>
@@ -102,18 +104,18 @@
     </section>
 
     <!-- Events Section -->
-    <section class="bg-light upcoming-section" id="events">
+    <section class="bg-light upcoming-section" id="events" data-aos="fade-up">
         <div class="container">
             <h2 class="section-heading">Upcoming Events</h2>
             <div class="row g-4">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-up">
                     <div class="card border-0 shadow-sm">
                         <h5>Annual Tech Fest</h5>
                         <p><strong>Date:</strong> June 10, 2025</p>
                         <p>Join us for exciting student-led projects, workshops, and coding challenges.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-up">
                     <div class="card border-0 shadow-sm">
                         <h5>Alumni Meet</h5>
                         <p><strong>Date:</strong> July 20, 2025</p>
@@ -125,18 +127,18 @@
     </section>
 
     <!-- Promotions / Why Choose Us -->
-    <section class="container whyChoose text-center">
+    <section class="container whyChoose text-center" data-aos="fade-up">
         <h2 class="section-heading">Why Choose Us?</h2>
         <div class="row mt-4">
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up">
                 <h5 class="card-title">Experienced Faculty</h5>
                 <p>Learn from experts and researchers in every field.</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up">
                 <h5 class="card-title">World-class Facilities</h5>
                 <p>Smart classrooms, labs, sports and creative spaces.</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up">
                 <h5 class="card-title">Career Support</h5>
                 <p>Internship and placement assistance for your success.</p>
             </div>
@@ -158,6 +160,14 @@
     <script src="asset/script.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <!-- navbar script js end -->
+    <!-- aos link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true,
+        })
+    </script>
 </body>
 
 </html>
